@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 
 <?php get_sidebar('home'); ?>
+
 <div class="main">
 <!-- Start of loop -->
 <?php if (have_posts()) : ?>
