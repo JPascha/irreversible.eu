@@ -31,9 +31,7 @@ These could be SPANs or DIVs and with entirely different classes.
 */
 ?>
 
-<div id="primary" class="site-content">
-
-<div id="content" role="main">
+<div class="main">
 
 
 <?php
@@ -100,11 +98,6 @@ End of Page
 </div>
 
 <!-- #content -->
-
-</div>
-
-<!-- #primary -->
-
 
 <?php
 /*
