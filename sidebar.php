@@ -1,5 +1,5 @@
 <!-- sidebar -->
-<div class="info">
+<div class="info-sb">
 	<div class="floating-icon-info"><i class="fa fa-key"></i></div>
 	<div class="floating-info top-info">
 		<div class="popOutInfo">Verified!</div>

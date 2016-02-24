@@ -91,7 +91,7 @@ body {
 .bg-load {
 	display: none;
 }
-.info {
+.info-sb {
 	position: absolute;
 	left: 50px;
 	bottom: 10px;
