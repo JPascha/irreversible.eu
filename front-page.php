@@ -2,7 +2,7 @@
 
 <?php get_sidebar('home'); ?>
 
-<div class="main">
+<div class="home-main">
 <!-- Start of loop -->
 <?php if (have_posts()) : ?>
 

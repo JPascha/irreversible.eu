@@ -26,7 +26,6 @@
 /* CSS */
 
 * {
-	color: #ffffff;
 	transition: all 0.2s;
 	text-decoration: none;
 	font-family: 'Roboto', sans-serif, 'FontAwesome';
@@ -36,7 +35,7 @@
 }
 body {
 	background-color: #00001E;
-	overflow: hidden;
+/*	overflow: hidden; */
 }
 .background {
 	background-image: url(/wp-content/uploads/2016/02/background1.jpg);
@@ -120,7 +119,7 @@ body {
 }
 .floating-icon-info {
 	content: "";
-	color: #747474;
+	color: #ffffff;
 	width: 30px;
 	height: 40px;
 	display: inline-block;
@@ -142,6 +141,7 @@ body {
 	text-align: center;
 	display: inline-block;
 	pointer-events: all;
+	color: #ffffff;
 }
 .submit-info {
 	border: none;
@@ -151,6 +151,7 @@ body {
 	height: 100%;
 	left: 0px;
 	pointer-events: all;
+	color: #ffffff;
 }
 .submit-info:hover {
 	background: rgba(255, 255, 255, 0.1);
@@ -166,6 +167,7 @@ body {
 	line-height: 30px;
 	transform: scaleY(0);
 	pointer-events: all;
+	color: #ffffff;
 }
 .popOutInfo.red {
 	top: 40px;
@@ -182,11 +184,12 @@ body {
 	width: 540px;
 	border-radius: 10px 10px 0px 0px;
 	padding-bottom: 1px;
-	position: absolute;
-	bottom: -25%;
-	transform: scaleY(0);
+	position: fixed;
+	bottom: 0px;
 	left: calc(50% - 270px);
-	transition: all 0.2s, bottom 0.8s, transform 0.4s;
+	transition: all 0.2s, clip 0.8s;
+	color: #ffffff;
+    clip: rect(230px,540px,230px,0px);
 }
 .infoExpl p {
 	padding: 0px 10px;
@@ -203,9 +206,8 @@ body {
 	text-align: center;
 }
 .infoExpl.open {
-	bottom: 0px;
-	transform: scaleY(1);
-	transition: all 0.2s, bottom 0.8s, transform 0.8s;
+    clip: rect(0px,540px,230px,0px);
+	transition: all 0.2s, clip 0.8s;
 }
 .infoExpl a {
 	text-decoration: underline;
@@ -215,60 +217,4 @@ body {
     position: relative;
     right: -206px;
     cursor: pointer;
-}
-
-
-/* FORUM */
-body {
-    overflow: auto;
-}
-
-.main {
-    width: 65vw;
-    float: right;
-    background-color: #283E56;
-    padding: 15px;
-    border-radius: 10px 10px 0px 0px;
-    margin-top: 50px;
-    margin-right: 5vw;
-}
-
-#bbpress-forums li.bbp-header {
-    background: #252542;
-    border: none;
-}
-
-#bbpress-forums li.bbp-footer {
-    border: none;
-    background: #2D435D;
-}
-
-#bbpress-forums div.odd, #bbpress-forums ul.odd {
-    background: #354960;
-}
-
-.logo-text {
-    left: 75px;
-    margin-top: 170px;
-    font-size: 1.6475em;
-}
-
-.logo {
-    margin-left: 66px;
-}
-
-#bbpress-forums ul.bbp-lead-topic, #bbpress-forums ul.bbp-topics, #bbpress-forums ul.bbp-forums, #bbpress-forums ul.bbp-replies, #bbpress-forums ul.bbp-search-results {
-    border: none;
-}
-
-#bbpress-forums li.bbp-body ul.forum, #bbpress-forums li.bbp-body ul.topic {
-    border: none;
-}
-
-#bbpress-forums fieldset.bbp-form {
-    border: none;
-    background: #354960;
-    border-radius: 10px 10px 0px 0px;
-    padding-top: 30px;
-    position: relative;
 }
