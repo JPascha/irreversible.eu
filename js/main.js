@@ -7,7 +7,6 @@ var b = 0;
 var c = [
         '/wp-content/uploads/2016/02/background1.jpg'
         , '/wp-content/uploads/2016/02/background2.jpg'
-        , '/wp-content/uploads/2016/02/background3.jpg'
 		, '/wp-content/uploads/2016/02/background4.jpg'
 		, '/wp-content/uploads/2016/02/background5.jpg'
     ];
